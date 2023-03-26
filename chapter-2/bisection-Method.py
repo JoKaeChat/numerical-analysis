@@ -22,12 +22,12 @@ def bisection(a, b, TOL, NO, f):
     return p
 
 
-def f(x): return x**(1/2)-math.cos(x)
+def f(x): return x**(3)-x-1
 
 
-a = 0
-b = 1
-NO = 3
+a = 1
+b = 2
+NO = 50
 TOL = 1e-4
 
 p = bisection(a, b, TOL, NO, f)

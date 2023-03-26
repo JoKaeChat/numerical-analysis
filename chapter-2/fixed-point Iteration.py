@@ -16,12 +16,14 @@ def fixed_point(p0, TOL, NO, g):
     return p
 
 
-def g(x): return x - x**3 - 4*x**2 + 10
-
+##def g(x): return (-3+x-2*x**2)**(1/4)
+##def g(x): return ((x*+3-x**4)/2)**(1/2)
+##def g(x): return ((x+3)/(x**2+2))**(1/2)
+def g(x): return ((3*x**4+2*x**2+3)/(4*x**3+4*x-1))
 
 p0 = 1.5
 TOL = 1e-9
-NO = 50
+NO = 4
 print("{} iteration : p = {} ".format(0, p0))
 ans = fixed_point(p0, TOL, NO, g)
 print(ans)

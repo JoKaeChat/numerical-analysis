@@ -30,8 +30,7 @@ def bisection_relative_error_test(a, b, TOL, N0, f):
     return p
 
 
-def f(x): return x**3 + 4*x**2 - 10
-
+def f(x): return x**3 -x-1
 
 a = 1
 b = 2
